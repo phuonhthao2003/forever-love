@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thảo & Lộc - Forever Love</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(#020111,#191970,#000);
+height:100vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.star{
+position:absolute;
+width:2px;
+height:2px;
+background:white;
+border-radius:50%;
+animation:twinkle 2s infinite;
+}
+
+@keyframes twinkle{
+0%{opacity:.2;}
+50%{opacity:1;}
+100%{opacity:.2;}
+}
+
+.box{
+z-index:2;
+padding:25px;
+}
+
+h1{
+font-size:38px;
+margin-bottom:15px;
+}
+
+h2{
+font-size:22px;
+color:#ffd6f5;
+margin-bottom:10px;
+}
+
+p{
+margin:10px 0;
+font-size:18px;
+}
+
+button{
+margin-top:25px;
+padding:15px 35px;
+font-size:20px;
+border:none;
+border-radius:50px;
+background:#ff4fa3;
+color:white;
+cursor:pointer;
+box-shadow:0 0 20px pink;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>🌙 Welcome 🌙</h2>
+
+<h1>Thảo ❤️ Lộc</h1>
+
+<p>Forever Love</p>
+
+<p>10 • 04 • 2026</p>
+
+<p>
+"Dù khoảng cách có xa,<br>
+trái tim em vẫn luôn hướng về anh."
+</p>
+
+<button onclick="alert('Món quà đang được hoàn thiện ❤️')">
+MỞ MÓN QUÀ
+</button>
+
+</div>
+
+<script>
+
+for(let i=0;i<150;i++){
+
+let s=document.createElement("div");
+
+s.className="star";
+
+s.style.left=Math.random()*100+"%";
+
+s.style.top=Math.random()*100+"%";
+
+s.style.animationDelay=Math.random()*2+"s";
+
+document.body.appendChild(s);
+
+}
+
+</script>
+
+</body>
+</html>
